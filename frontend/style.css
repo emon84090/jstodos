@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background: #1b1b1b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+a {
+    color: #fff;
+}
+
+.social-links a {
+    background: #e2e8f0;
+    border-radius: 50%;
+    color: #1e293b;
+    display: inline-block;
+    font-size: 18px;
+    height: 36px;
+    line-height: 1;
+    margin-right: 4px;
+    padding: 8px 0;
+    text-align: center;
+    transition: .3s;
+    width: 36px;
+}
+
+
+
+
+#spinner.hidden {
+    display: none;
+}
+
+.active {
+    color: #e11d48;
+}
+
+.mt-5 {
+    margin-top: px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 12px;
+}
+
+/* navbar */
+.logo {
+    font-size: 25px;
+    color: #fff;
+}
+
+.logo span {
+    color: #e11d48;
+    font-weight: bold;
+
+}
+
+.header-all-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 9px;
+    line-height: 68px;
+}
+
+
+
+nav ul li a {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+
+}
+
+nav ul li a:hover {
+    color: #e11d48;
+    transition: all .1s;
+}
+
+
+.icon i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+/* navbar */
+
+/* form */
+.userform-all-content {
+    background-color: #f1f5f9;
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.userform {
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+}
+
+.form-group input,
+textarea {
+    border-radius: 8px;
+    border-style: none;
+    border: 1px solid #94a3b8;
+    padding: 12px;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input::placeholder {
+
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+}
+
+.form-group input,
+button {
+    width: 100%;
+    height: 44px;
+}
+
+.form-group button,
+.update-btn {
+    margin-top: 10px;
+    background: #e11d48;
+
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 20px;
+}
+
+
+td .actions {
+    display: flex;
+    align-items: center;
+
+}
+
+td button {
+
+    background: #e11d48;
+
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    line-height: 20px;
+    margin: 0px 5px;
+
+}
+
+button#edit {
+    background-color: #22c55e;
+}
+
+button#delete {
+    background-color: #ef4444;
+}
+
+/* form */
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    margin-top: 30px;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border: 1px solid #cbd5e1;
+    padding: 5px;
+}
+
+
+.sign-up-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+
+}
+
+.sign-up-right {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sign-up-left img {
+    max-width: 60%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.userform h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+
+.password-icon i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: #64748b;
+}
+
+
+
+/* media query */
+
+@media (max-width:576px) {
+    .header-all-content {
+        padding: 9px 7px 0px 6px;
+    }
+
+    .menu {
+        width: 100%;
+
+    }
+
+    nav ul {
+        border-top: 1px solid #4b5563;
+        margin-top: 16px;
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 36px;
+    }
+
+    .icon i {
+        display: block;
+    }
+
+    nav ul {
+        max-height: 0px;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+    }
+
+    nav ul.active {
+        max-height: 300px;
+    }
+}
+
+/* media query */
