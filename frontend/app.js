@@ -72,7 +72,7 @@ addform?.addEventListener('submit', async (e) => {
         country: country.value
     }
     try {
-        const { data } = await axios.post(`http://jstodos.trustpointit.com/todo/save`, details);
+        const { data } = await axios.post(`https://practice.trustpointit.com/todo/save`, details);
         console.log(data);
         spinner.classList.add('hidden');
         reaData();
@@ -98,7 +98,7 @@ const deleteFun = async (id) => {
 
     try {
         if (confirm('are you sure,want to delete')) {
-            const data = await axios.delete(`http://jstodos.trustpointit.com/todo/delete/${id}`);
+            const data = await axios.delete(`https://practice.trustpointit.com/todo/delete/${id}`);
             reaData();
             swal("Good job!", "Data delete", "success");
         }
@@ -144,7 +144,7 @@ const showData = (val) => {
 
 const reaData = async () => {
     try {
-        const { data } = await axios.get(`http://jstodos.trustpointit.com/todo`);
+        const { data } = await axios.get(`https://practice.trustpointit.com/todo`);
         showData(data.data)
     } catch (err) {
         console.log(err);
